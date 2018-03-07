@@ -1,0 +1,6 @@
+input.ng-invalid{
+  border: 1px solid red;
+}
+#back {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/05/11/33 /old-books-1237619_960_720.jpg");
+}

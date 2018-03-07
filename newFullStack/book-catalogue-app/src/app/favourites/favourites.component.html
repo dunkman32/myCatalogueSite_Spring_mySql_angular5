@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8" style="background-color: gray;  border-radius: 10px">
+
+      <a id="bookMarginForTagA"
+        style="background-color: ivory"
+        class="list-group-item clearfix"
+         *ngFor="let book of favouriteBooks; let i = index">
+        <div class="pull-left">
+          <h4 class="list-group-item-heading" >{{ book.name }}</h4>
+          <p class="list-group-time-text">Author :{{ book.author }}</p>
+          <p class="list-group-time-text">Year :{{ book.year }}</p>
+          <p class="list-group-time-text">ISBN :{{ book.isbn }}</p>
+        </div>
+        <span class="pull-right">
+          <button class="btn btn-danger" (click)="deleteFavourite(book.id)">Delete</button>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
